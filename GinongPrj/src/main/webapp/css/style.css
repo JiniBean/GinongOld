@@ -1,0 +1,57 @@
+:root {
+  /* root => css에서의 전역공간 */
+
+  --color-base-0: #fff;
+  --color-base-1: #eaeaea;
+  --color-base-2: #c4c8cc;
+  --color-base-3: #b1b1b1;
+  --color-base-4: #9c9999;
+  --color-base-5: #7d7d7d;
+  --color-base-6: #616063;
+  --color-base-7: #333333;
+  --color-base-8: #000;
+  /* extra ---------------- */
+  --color-base-9: #000;
+  --color-base-10: #000;
+
+  --color-main-1: #fd7e14;
+  --color-main-2: #905634;
+  --color-main-3: #5e2808;
+  --color-main-4: #251404;
+
+  --color-accent-1: #f3e814;
+
+  --color-sub-1: #f5665e;
+  --color-sub-2: #0b623b;
+
+  --size-0: 10px;
+  --size-1: 14px;
+  --size-2: 16px;
+  --size-3: 20px;
+  --size-4: 24px;
+  --size-5: 26px;
+  --size-6: 32px;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+main {
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+main > * {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+main * {
+  font-size: var(--size-1);
+  color: var(--color-base-7);
+}

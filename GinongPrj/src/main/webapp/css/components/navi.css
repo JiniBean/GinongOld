@@ -1,0 +1,42 @@
+.hall-menu {
+  display: none;
+}
+
+.m-navi {
+  width: 100%;
+  height: 60px;
+  padding-left: 6px;
+  padding-right: 6px;
+  position: fixed;
+  bottom: 0;
+  background-color: var(--color-base-0);
+  box-sizing: border-box;
+}
+
+.m-navi > h1 {
+  display: none;
+}
+
+.m-navi > ul {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.m-navi li {
+  flex-grow: 1;
+}
+
+.m-navi li > a {
+  height: 100%;
+  display: flex;
+  gap: 4px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.m-navi li > a > :nth-child(2) {
+  font-size: var(--size-1);
+  color: var(--color-base-7);
+}

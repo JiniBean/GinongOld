@@ -1,0 +1,98 @@
+div,
+a,
+span {
+  font-size: var(--size-1);
+}
+.info {
+  min-height: 280px;
+  display: flex;
+  flex-direction: column;
+}
+
+.info > img {
+  width: 100%;
+  height: 240px;
+}
+
+.info > div {
+  font-size: var(--size-2);
+}
+
+.info > .price {
+  font-weight: bold;
+}
+
+.option-box {
+  width: 100%;
+  height: 40px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.option-box > :nth-child(2),
+.option-box > :last-child {
+  flex-grow: 1;
+}
+
+.option-box > .bar {
+  content: "";
+
+  width: 1px;
+  height: 20px;
+  background-color: var(--color-base-1);
+  top: 50%;
+}
+
+.option-box a {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+}
+.detail {
+  margin: 0px;
+}
+.detail > ul {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border-top: solid 14px var(--color-base-1);
+  border-bottom: solid 14px var(--color-base-1);
+  margin: 0px;
+}
+.detail > ul > li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 48px;
+  width: 33%;
+
+  border-right: solid 2px var(--color-base-1);
+}
+.detail > ul > li:last-child {
+  border-right: 0;
+}
+
+/* detail 하단 메뉴---------------------- */
+.button-cart {
+  display: flex;
+  border: solid 1px var(--color-main-1);
+  border-radius: 10px;
+  width: 124px;
+  height: 36px;
+  justify-content: center;
+  align-items: center;
+}
+.button-purchase {
+  display: flex;
+  background-color: var(--color-main-1);
+  width: 124px;
+  height: 36px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  color: #ffffff;
+}

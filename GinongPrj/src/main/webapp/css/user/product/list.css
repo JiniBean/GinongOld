@@ -1,0 +1,35 @@
+main > * {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.order-category {
+  width: 100%;
+  height: 42px;
+  display: flex;
+  align-items: center;
+}
+
+.order-category > ul {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.order-category > ul > :nth-child(3)::before {
+  content: "";
+  width: 1.5px;
+  height: 20px;
+  background: #e0e0e0;
+  position: absolute;
+  /* left: -12px; */
+  /* top: 50%; */
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.card-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3em;
+}

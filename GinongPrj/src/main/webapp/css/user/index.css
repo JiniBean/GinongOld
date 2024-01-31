@@ -1,0 +1,99 @@
+.recommend {
+  height: 220px;
+  margin-bottom: 20px;
+  padding-left: 36px;
+  padding-right: 36px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.recommend > h1 {
+  display: none;
+}
+
+.recommend > nav {
+  width: 100%;
+}
+
+.recommend .tap {
+  height: 30px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.recommend .content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.recommend .img-box {
+  width: 100%;
+  height: 100%;
+}
+
+.recommend .info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  position: absolute;
+  background-color: #4141407c;
+  bottom: 0px;
+  left: 0%;
+}
+
+.event-box {
+  margin-bottom: 20px;
+  height: 280px;
+  display: flex;
+  flex-direction: column;
+}
+
+.event-box > h1 {
+  font-size: 16px;
+  font-weight: bold;
+  flex-grow: 1;
+}
+
+.event-box > .card-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.banner {
+  background-image: url(/img/banner.svg);
+  width: 100%;
+  height: 144px;
+}
+
+.banner > a {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.banner > a > span {
+  width: 100%;
+  text-align: center;
+  color: var(--color-base-0);
+  background-color: var(--color-base-7);
+}
+
+.banner > a > :first-child {
+  font-size: 12px;
+}
+
+.banner > a > :last-child {
+  font-size: 20px;
+  font-weight: bold;
+}

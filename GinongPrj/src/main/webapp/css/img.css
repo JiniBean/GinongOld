@@ -1,0 +1,27 @@
+.img {
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  border-radius: 10px;
+
+  width: 100%;
+  height: 100%;
+  text-indent: -999px;
+  overflow: hidden;
+}
+
+.img-logo {
+  background-image: url(/img/logo.png);
+  width: 30px;
+  height: 32px;
+}
+
+.img-carrot {
+  background-image: url(/img/carrot.jpg);
+}
+
+.img-cabbage {
+  background-image: url(/img/cabbage.jpg);
+}
+

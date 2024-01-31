@@ -1,0 +1,47 @@
+/* ---- 카테고리 스타일 ---------------------------- */
+.category {
+  height: 42px;
+}
+
+.category > h1 {
+  display: none;
+}
+.category > .content {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #eaeaea;
+}
+
+/* ---- 상품카드 세로형  ---------------------------- */
+.card-row > a {
+  display: inline-block;
+  height: 220px;
+  width: 144px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.card-row > a > img {
+  height: 144px;
+  width: 100%;
+  text-indent: -999px;
+  overflow: hidden;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.card-row > a > :nth-child(n) {
+  font-size: 14px;
+}
+.card-row > a > :nth-child(2) {
+  flex-grow: 1;
+}
+.card-row > a > :last-child {
+  font-weight: bold;
+}

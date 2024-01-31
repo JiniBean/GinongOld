@@ -1,0 +1,39 @@
+.root-header {
+  height: 62px;
+}
+.root-header > .content {
+  height: 100%;
+  margin-left: 16px;
+  margin-right: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.root-header .logo {
+  display: flex;
+  align-items: center;
+}
+
+.root-header .quick {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: end;
+}
+
+.root-header .quick h1 {
+  display: none;
+}
+
+.root-header .top,
+.root-header .down {
+  display: flex;
+}
+
+/* ---- 모바일 버전  ---------------------------- */
+.root-header .top,
+.root-header .icon-menu,
+.root-header .icon-my-page {
+  display: none;
+}
