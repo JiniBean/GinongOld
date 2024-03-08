@@ -7,14 +7,14 @@
     <environment id="development">
       <transactionManager type="JDBC"/>
       <dataSource type="POOLED">
-        <property name="driver" value="${driver}"/>
-        <property name="url" value="${url}"/>
-        <property name="username" value="${username}"/>
-        <property name="password" value="${password}"/>
+        <property name="driver" value="oracle.jdbc.driver.OracleDriver"/>
+        <property name="url" value="jdbc:oracle:thin:@db.newlecture.com:1521/xepdb1"/>
+        <property name="username" value="RLAND"/>
+        <property name="password" value="0530"/>
       </dataSource>
     </environment>
   </environments>
   <mappers>
-    <mapper resource="org/mybatis/example/BlogMapper.xml"/>
+    <mapper resource="mappers/ProductRepositoryMapper.xml"/>
   </mappers>
 </configuration>

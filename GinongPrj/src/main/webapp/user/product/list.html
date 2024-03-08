@@ -3,16 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/css/reset.css" />
-    <link rel="stylesheet" href="/css/style.css" />
-    <link rel="stylesheet" href="/css/img.css" />
-    <link rel="stylesheet" href="/css/components/header.css" />
-    <link rel="stylesheet" href="/css/components/main.css" />
-    <link rel="stylesheet" href="/css/components/navi.css" />
-    <link rel="stylesheet" href="/css/icon.css" />
-    <link rel="stylesheet" href="/css/font.css" />
-    <link rel="stylesheet" href="/css/util.css" />
-    <link rel="stylesheet" href="/css/user/product/list.css" />
+    <link rel="stylesheet" href="../../css/reset.css" />
+    <link rel="stylesheet" href="../../css/style.css" />
+    <link rel="stylesheet" href="../../css/img.css" />
+    <link rel="stylesheet" href="../../css/components/header.css" />
+    <link rel="stylesheet" href="../../css/components/main.css" />
+    <link rel="stylesheet" href="../../css/components/navi.css" />
+    <link rel="stylesheet" href="../../css/icon.css" />
+    <link rel="stylesheet" href="../../css/font.css" />
+    <link rel="stylesheet" href="../../css/util.css" />
+    <link rel="stylesheet" href="../../css/user/product/list.css" />
     <title>기농이네</title>
   </head>
   <body>
@@ -97,6 +97,20 @@
             <span>15,000원</span>
           </a>
         </div>
+        <div class="card-row">
+          <a href="">
+            <img src="/img/cabbage.jpg" alt="배추" />
+            <span>할아버지네 장독대 고추장, 500g</span>
+            <span>15,000원</span>
+          </a>
+        </div>
+        <div class="card-row">
+          <a href="">
+            <img src="/img/cabbage.jpg" alt="배추" />
+            <span>할아버지네 장독대 고추장, 500g</span>
+            <span>15,000원</span>
+          </a>
+        </div>
       </section>
 
       <section class="card-container">
@@ -108,13 +122,51 @@
           </a>
         </div>
         <div class="card-row">
-          <a href="">
-            <img src="/img/cabbage.jpg" alt="배추" />
-            <span>할아버지네 장독대 고추장, 500g</span>
-            <span>15,000원</span>
-          </a>
+            <img src="../../img/cabbage.jpg" alt="배추" />
+            <a href="">장바구니</a>
+            <a href="">
+              <span>할아버지네 장독대 고추장, 500g</span>
+              <span>15,000원</span>
+              <span>추천수</span>
+           </a>
         </div>
       </section>
+
+      <!-- 상품카드 - 추천수 -->
+      <div>
+        <div>
+          <a href=""><img src="" alt=""></a>
+          <a href=""><span>장바구니</span></a>
+        </div>
+        <div>
+          <div>
+            <a href="">
+              <span th:text="|${}, ${} |">당근, 2개입</span>
+              <span>2,500원</span>
+            </a>
+          </div>
+          <div>
+            <a href="">
+              <span>아이콘</span>
+              <span>추천수</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 상품카드 + 추천수 -->
+      <div>
+        <div>
+          <a href=""><img src="" alt=""></a>
+          <a href=""><span>장바구니</span></a>
+        </div>
+        <div>
+          <a href="">
+            <span th:text="|${}, ${} |">당근, 2개입</span>
+            <span>2,500원</span>
+          </a>
+        </div>
+      </div>
 
       <section class="card-container">
         <div class="card-row">
@@ -165,6 +217,7 @@
         </li>
       </ul>
     </nav>
+    
 
     <!-- ========================== 전체 메뉴 ====================================== -->
     <nav class="hall-menu">

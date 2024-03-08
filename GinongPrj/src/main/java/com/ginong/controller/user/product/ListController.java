@@ -1,10 +1,11 @@
-package com.ginong.user.product.controller;
+package com.ginong.controller.user.product;
 
 import java.io.IOException;
 import java.util.List;
 
-import com.ginong.user.product.entity.Product;
-import com.ginong.user.product.service.ProductService;
+import com.ginong.entity.Product;
+import com.ginong.service.ProductService;
+import com.ginong.service.ProductServiceImp;
 
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
@@ -18,7 +19,7 @@ public class ListController extends HttpServlet{
 	private ProductService service;
 	
 	public ListController() {
-		service = new ProductService();
+		service = new ProductServiceImp();
 	}
 	
 	@Override

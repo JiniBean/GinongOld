@@ -1,4 +1,4 @@
-package com.ginong.user.product.repository;
+package com.ginong.repository;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -8,9 +8,9 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.ginong.user.product.entity.Product;
+import com.ginong.entity.Product;
 
-public class ProductRepository {
+public class ProductRepository_origin {
 
 	public List<Product> findAll() {
 

@@ -1,4 +1,4 @@
-package com.ginong.user.product.entity;
+package com.ginong.entity;
 
 import java.util.Date;
 

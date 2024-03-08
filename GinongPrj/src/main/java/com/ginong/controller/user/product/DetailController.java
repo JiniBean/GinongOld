@@ -1,9 +1,10 @@
-package com.ginong.user.product.controller;
+package com.ginong.controller.user.product;
 
 import java.io.IOException;
 
-import com.ginong.user.product.entity.Product;
-import com.ginong.user.product.service.ProductService;
+import com.ginong.entity.Product;
+import com.ginong.service.ProductService;
+import com.ginong.service.ProductServiceImp;
 
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
@@ -17,7 +18,7 @@ public class DetailController extends HttpServlet {
 	private ProductService service; 
 	
 	public DetailController() {
-		service = new ProductService();
+		service = new ProductServiceImp();
 	}
 	
 	@Override
